@@ -1,0 +1,36 @@
+/* Common styles for both the inner and outer circles */
+.cursor-circle {
+    position: fixed;
+    pointer-events: none; /* Ensures that the cursor doesn’t interfere with click events */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Always stays on top */
+  }
+  
+  /* Outer circle - larger and expands slowly */
+  .outer-circle {
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.5); /* A light border color */
+    transition: transform 0.15s ease-out;
+    animation: outerExpand 1s infinite ease-in-out;
+  }
+  
+  /* Inner circle - smaller and constant */
+  .inner-circle {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 19, 19, 0.815); /* Dark center circle */
+    transition: transform 0.1s ease-out;
+  }
+  
+  /* Outer circle animation (expanding and contracting) */
+  @keyframes outerExpand {
+    0%, 100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+  }
+  

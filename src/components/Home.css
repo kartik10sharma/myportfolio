@@ -1,0 +1,27 @@
+/* Home.css */
+
+.home {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 200px 20px;
+  }
+  
+  .home h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .home h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .resume-button {
+    background-color: #fff;
+    color: #000000;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+  }
+  

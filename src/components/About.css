@@ -1,0 +1,89 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #888;
+  
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.role {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  padding: 20px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.say-hello {
+  background-color: #000000;
+}
+
+.say-hello:hover {
+  background-color: #000000;
+}
+
+.projects {
+  background-color: #000;
+}
+
+.projects:hover {
+  background-color: #333;
+}
+
+.profile-picture {
+  flex-shrink: 0;
+}
+
+.profile-img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.grid-background {
+  background-color: #ffffff; /* Optional, choose your base background color */
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px; /* Size of each grid square */
+  background-position: center;
+}
+.section {
+  padding: 50px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
