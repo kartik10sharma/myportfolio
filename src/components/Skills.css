@@ -3,37 +3,102 @@
     justify-content: space-between;
     padding: 60px;
     background-color: #fefefe;
-    align-items: flex-start; /* Align items at the top */
-  }
-  
-  .text-section {
-    width: 40%; /* Reduce the width for the text section */
-    margin-right: 20px; /* Add space between text section and skills */
-  }
-  
-  .skills-container {
-    width: 50%; /* Keep the width for the skills section */
-  }
-  
-  .skills-section h1 {
+    align-items: flex-start;
+    
+}
+
+.text-section {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.skills-container {
+    width: 50%;
+    align-items: flex-start;
+}
+
+.skills-section h1 {
     text-align: left;
-    font-size: 2.5rem; /* Adjust font size if needed */
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 20px; /* Adjust margin for spacing */
-  }
-  
-  .paragraph {
+    margin-bottom: 20px;
+    
+}
+
+.paragraph {
     text-align: left;
     margin-left: 0;
     width: 100%;
-  }
-  .skill-category {
-    background-color: #fff;
-    border: 2px solid #eee;
-    border-radius: 10px;
-    margin: 30px 0; /* Adjust this value to increase/decrease space */
-    padding: 20px;
+}
+
+.skill-category {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px; /* Adjust spacing between categories as needed */
+    align-items: flex-start;
+}
+
+.skill-category:not(:first-child)::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 650px;
+    background-color: #ddd;
+    margin-top: 15px; /* Adjust spacing above the line as needed */
+    margin-left: 20px;
+}
+
+.skill-category li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Tab navigation styles */
+.tab-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddd; /* Changed border color to match the image */
+    border-radius: 20px;
+    padding: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    color: #333;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: color 0.3s ease;
+    outline: none;
+    flex: 1;
+    text-align: center;
+}
+
+.tab-button.active {
+    color: #000; /* Active tab color */
+    background-color: #f0f0f0; /* Active tab background */
+    border-radius: 15px;
+}
+
+.tab-button:not(.active):hover {
+    color: #888;
+}
+.skills-section{
+    padding: 80px;
+}
+ul {
+    list-style-type: none;
+    padding: 0; /* Optional: removes default padding */
+    margin: 0;  /* Optional: removes default margin */
   }
- 
+  .experience-content{
+    align-items: flex-start;
+  }
+  section {
+    padding: 0px 0px;
+    min-height: auto;
+}

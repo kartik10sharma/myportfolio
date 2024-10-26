@@ -7,7 +7,7 @@ const Home = () => {
     <div className="home">
       <h1>Kartik Sharma</h1>
       <h2>4 years of experience</h2>
-      <p>... (other details from the image)</p>
+      <p>... </p>
       <button className="resume-button">Download Resume</button>
     </div>
   );

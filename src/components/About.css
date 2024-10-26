@@ -70,7 +70,8 @@
 }
 
 .profile-img {
-  width: 300px;
+  width: 400px;
+  height: auto;
   border-radius: 20px;
 }
 
@@ -86,4 +87,8 @@
   padding: 50px 20px;
   min-height: 100vh;
   box-sizing: border-box;
+}
+section {
+  padding: 0px 0px;
+  min-height: auto;
 }

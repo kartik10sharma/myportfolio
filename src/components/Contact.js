@@ -2,7 +2,7 @@ import React from 'react';
 import './Contact.css';  // Import custom CSS for styling
 import './Animation.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faInstagram,faReddit,faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 function Contact() {
   return (
@@ -39,9 +39,16 @@ function Contact() {
           <a href="https://www.linkedin.com/in/kartik-10sharma/" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="https://instagram.com/your-instagram-profile" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/kartik_10sharma/" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
+          <a href="https://www.reddit.com/user/Dense-Breakfast2166/" target="_blank" rel="noreferrer">
+  <FontAwesomeIcon icon={faReddit} />
+</a>
+<a href="https://discord.com/channels/@me" target="_blank" rel="noreferrer">
+  <FontAwesomeIcon icon={faDiscord} />
+</a>
+          
         </div>
       </div>
     </section>
