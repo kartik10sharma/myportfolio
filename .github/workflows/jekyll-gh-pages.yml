@@ -3,11 +3,12 @@ name: Deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change to your default branch if it's not "main"
+      - main  # Update this if your main branch has a different name
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out the repository
         uses: actions/checkout@v3
@@ -15,7 +16,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0' # Specify the Ruby version compatible with your Jekyll setup
+          ruby-version: '3.0' # Ensure compatibility with your Jekyll version
 
       - name: Install dependencies
         run: |
@@ -30,3 +31,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
+          allow_empty_commit: true
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
